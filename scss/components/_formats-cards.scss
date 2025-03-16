@@ -1,0 +1,57 @@
+.format-card {
+  height: 444px;
+  border-radius: 16px;
+  width: 321px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  @media screen and (min-width: $bp-tablet) {
+    width: 349px;
+  }
+
+  &--one {
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55.21%,
+        rgba(49, 38, 26, 0.71) 72.92%,
+        var(--color-primary-dark) 100%
+      ),
+      url(../images/format-one.jpg);
+  }
+  &--two {
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55.21%,
+        rgba(49, 38, 26, 0.71) 72.92%,
+        var(--color-primary-dark) 100%
+      ),
+      url(../images/format-two.jpg);
+  }
+  &--three {
+    background-image: linear-gradient(
+        180deg,
+        rgba(49, 38, 26, 0) 55.21%,
+        rgba(49, 38, 26, 0.71) 72.92%,
+        var(--color-primary-dark) 100%
+      ),
+      url(../images/format-three.jpg);
+  }
+
+  &__name {
+    color: var(--color-primary-light);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    color: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+}

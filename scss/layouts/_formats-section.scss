@@ -1,0 +1,32 @@
+.formats-section {
+  padding: 20px 0;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+  }
+  &__tittle {
+    margin: 0 auto 24px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 auto 80px;
+    }
+  }
+  &__slider {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+  &__list {
+    margin-bottom: 32px;
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}

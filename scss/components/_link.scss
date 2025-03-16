@@ -1,0 +1,19 @@
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    color: var(--color-brand-normal);
+    transition: color 0.3s;
+  }
+}
+
+.link-mobile {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    color: var(--color-brand-normal);
+    transition: color 0.3s;
+  }
+}

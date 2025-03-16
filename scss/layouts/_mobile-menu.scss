@@ -1,0 +1,42 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-primary-light);
+  transform: translate(100%);
+  transition: transform 0.3s;
+  &.is-open {
+    transform: translate(0%);
+  }
+  &::before {
+    background-repeat: no-repeat;
+    background-image: url(/images/mobile-bread.png);
+    content: "";
+    width: 180px;
+    height: 240px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__menu-btn-close {
+    position: absolute;
+    top: 22px;
+    right: 27px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    stroke: var(--color-primary-dark);
+    fill: none;
+  }
+  &__nav {
+    margin: 16px 0 0 24px;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 32px;
+  }
+}
